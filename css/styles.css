@@ -1,0 +1,336 @@
+body {
+  background-color: #F2EFED;
+}
+
+/* Fixed sidebar, full height */
+.sidebar {
+  height: 200%;
+  width: 365px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+
+}
+
+/* grace */
+p.name {
+  padding-top: 20px;
+  padding-right: 30px;
+  text-align: right;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+/* creative portfolio */
+.sidebar h1 {
+  color: #EF5151;
+  font-family: Arial-black;
+  font-size: 50px;
+  text-align: left;
+  padding-left: 50px;
+}
+
+/* gallery */
+ul {
+  list-style-type: none;
+  line-height: 50px;
+  text-align: left;
+  padding-left: 100px;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+.dropdown {
+position: sticky;
+}
+
+.dropdown h3 {
+
+  text-align: left;
+  padding-left: 50px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+
+.social img {
+  padding-right: 10px;
+}
+
+
+/* -------link actions------- */
+ul a:hover {
+  font-weight: bold;
+}
+
+/* unvisited link */
+.purple a:link {
+  color: #BEA4E5;
+  text-decoration: none;
+}
+
+.pink a:link {
+  color: #EE8989;
+  text-decoration: none;
+}
+
+.blue a:link {
+  color: #8DA6EE;
+  text-decoration: none;
+}
+
+/* visited link */
+.purple a:visited {
+  color: #BEA4E5;
+  text-decoration: none;
+}
+
+.pink a:visited {
+  color: #EE8989;
+  text-decoration: none;
+}
+
+.blue a:visited {
+  color: #8DA6EE;
+  text-decoration: none;
+}
+
+/* mouse over link */
+.row a:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: white;
+  text-decoration: none;
+}
+
+/* ------------- Homepage Images Grid ------------- */
+.row {
+  display: flexbox;
+  /* IE10 */
+  display: flex;
+  flex-wrap: wrap;
+  /* IE10 */
+  padding-left: 365px;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+/* Create four equal columns that sits next to each other */
+/* Homepage Columns */
+.column {
+  flex: 20%;
+  /* IE10 */
+  max-width: 50%;
+  padding: 0 10px;
+  padding-bottom: 20px;
+}
+
+.column.homepage img {
+  margin-top: 20px;
+  vertical-align: middle;
+  width: 100%;
+  border-bottom: 10px solid;
+}
+
+.column p {
+  color: #685B52;
+  font-family: serif;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Showcase text */
+.subheading {
+  position: fixed;
+  width: 100%;
+
+}
+
+.subheading h1 {
+  text-align: right;
+  padding-right: 100px;
+    color: #685B52;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 40px;
+
+}
+
+/* ------------- Sub-page Images Grid ------------- */
+.row.sub-page {
+  display: flex;
+  flex-wrap: wrap;
+  /* IE10 */
+  align-content: flex-end;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+/* Create 3 equal columns that sits next to each other */
+/* Sub-page Columns */
+.showcase.column.portrait {
+  flex: 40%;
+  max-width: 40%;
+  padding-bottom: 20px;
+}
+
+.showcase img {
+  width: 100%;
+}
+
+.showcase.column.portrait img {
+  vertical-align: middle;
+}
+
+.showcase.column.landscape {
+  flex: 100%;
+  max-width: 80%;
+  padding-bottom: 20px;
+}
+
+.showcase.column.landscape img {
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    flex: 50%;
+    max-width: 100%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.aboutme {
+  display: flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 365px;
+  padding-top: 20px;
+}
+
+.info {
+  padding-top: 30px;
+  flex: 50%;
+  color: black;
+  font-family: sans-serif;
+  font-weight: light;
+  font-size: 20px;
+}
+
+.info em {
+  color: #EF5151;
+  font-style: normal;
+}
+
+.more {
+  padding-top: 150px;
+  padding-right: 50px;
+  flex: 10%;
+  font-family: sans-serif;
+  font-style: italic;
+  text-align: right;
+  color: #685B52;
+}
+
+/* Footer */
+footer {
+  display: flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #FC5656;
+  color: black;
+  position: relative;
+  width: 78%;
+  height: 100%;
+  padding-bottom: 30px;
+  bottom: 0;
+  left: 365px;
+  font-family: sans-serif;
+  < !-- without this the footer just started apres the longest main pics -->
+}
+
+.headshot img {
+  flex: 20%;
+  padding-left: 30px;
+}
+
+.about {
+  flex: 20%;
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #F2D1D0;
+}
+
+.about h4 {
+  color: black;
+  font-size: 22px;
+}
+
+.about p {
+  color: #F2D1D0;
+  font-size: 20px;
+  font-weight: lighter;
+  padding-right: 40px;
+}
+
+.about p em {
+  font-weight: bold;
+  font-style: normal;
+  color: #F2D1D0;
+}
+
+.education {
+  flex: 20%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.education h3 {
+  font-weight: bold;
+  color: black;
+}
+
+.education p {
+  color: #F2D1D0;
+}
